@@ -1,0 +1,9 @@
+---
+device1:
+  hostname: localhost1
+  groups:
+    - ios
+device2:
+  hostname: localhost2
+  groups: 
+    - ios

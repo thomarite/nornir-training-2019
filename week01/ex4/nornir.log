@@ -1,0 +1,6 @@
+2019-08-12 15:26:45,194 -  nornir.core -     INFO -        run() - Running task 'my_task' with args {} on 2 hosts
+2019-08-12 15:26:45,299 -  nornir.core -     INFO -        run() - Running task 'my_task' with args {} on 2 hosts
+2019-08-12 15:27:15,394 -  nornir.core -     INFO -        run() - Running task 'my_task' with args {} on 2 hosts
+2019-08-12 15:27:32,635 -  nornir.core -     INFO -        run() - Running task 'my_task' with args {} on 2 hosts
+2019-08-12 15:28:19,667 -  nornir.core -     INFO -        run() - Running task 'my_task' with args {} on 2 hosts
+2019-08-12 15:28:50,339 -  nornir.core -     INFO -        run() - Running task 'my_task' with args {} on 2 hosts

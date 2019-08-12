@@ -1,0 +1,4 @@
+---
+ios:
+  platform: ios
+  port: 22

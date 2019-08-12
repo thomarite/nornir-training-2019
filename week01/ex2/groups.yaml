@@ -1,0 +1,6 @@
+---
+ios:
+  platform: ios
+  username: user
+  password: pass
+  port: 22

@@ -1,0 +1,3 @@
+[pytest11]
+f5sdk_fixtures = f5sdk_plugins.fixtures
+

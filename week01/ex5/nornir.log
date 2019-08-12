@@ -1,0 +1,20 @@
+2019-08-12 15:38:05,190 -  nornir.core -     INFO -        run() - Running task 'my_task' with args {} on 2 hosts
+2019-08-12 15:38:05,226 - nornir.core.task -    ERROR -      start() - Host 'device1': task 'my_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex5.py", line 11, in my_task
+    print(" dns2:", task.host.data['dns2'])
+KeyError: 'dns2'
+
+2019-08-12 15:38:05,522 - nornir.core.task -    ERROR -      start() - Host 'device2': task 'my_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex5.py", line 10, in my_task
+    print(" dns1:", task.host.data['dns1'])
+KeyError: 'dns1'
+
+2019-08-12 15:40:48,992 -  nornir.core -     INFO -        run() - Running task 'my_task' with args {} on 2 hosts
+2019-08-12 15:41:03,821 -  nornir.core -     INFO -        run() - Running task 'my_task' with args {} on 2 hosts
+2019-08-12 15:41:29,378 -  nornir.core -     INFO -        run() - Running task 'my_task' with args {} on 2 hosts

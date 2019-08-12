@@ -1,0 +1,132 @@
+In [1]: from nornir import InitNornir                                                                                        
+
+In [2]: nr = InitNornir()                                                                                                    
+
+In [3]: nr.inventory                                                                                                         
+Out[3]: <nornir.core.inventory.Inventory at 0x7f2fe6319708>
+
+In [4]: dir(nr.inventory)                                                                                                    
+Out[4]: 
+['__class__',
+ '__delattr__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__le__',
+ '__len__',
+ '__lt__',
+ '__module__',
+ '__ne__',
+ '__new__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__setattr__',
+ '__sizeof__',
+ '__slots__',
+ '__str__',
+ '__subclasshook__',
+ '_update_group_refs',
+ 'add_group',
+ 'add_host',
+ 'children_of_group',
+ 'defaults',
+ 'dict',
+ 'filter',
+ 'get_defaults_dict',
+ 'get_groups_dict',
+ 'get_hosts_dict',
+ 'get_inventory_dict',
+ 'groups',
+ 'hosts']
+
+In [5]: dir(nr.inventory.hosts)                                                                                              
+Out[5]: 
+['_MutableMapping__marker',
+ '__abstractmethods__',
+ '__args__',
+ '__class__',
+ '__contains__',
+ '__delattr__',
+ '__delitem__',
+ '__dict__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__extra__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__getitem__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__iter__',
+ '__le__',
+ '__len__',
+ '__lt__',
+ '__module__',
+ '__ne__',
+ '__new__',
+ '__next_in_mro__',
+ '__orig_bases__',
+ '__origin__',
+ '__parameters__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__reversed__',
+ '__setattr__',
+ '__setitem__',
+ '__sizeof__',
+ '__slots__',
+ '__str__',
+ '__subclasshook__',
+ '__tree_hash__',
+ '__weakref__',
+ '_abc_cache',
+ '_abc_generic_negative_cache',
+ '_abc_generic_negative_cache_version',
+ '_abc_negative_cache',
+ '_abc_negative_cache_version',
+ '_abc_registry',
+ '_gorg',
+ 'clear',
+ 'copy',
+ 'fromkeys',
+ 'get',
+ 'items',
+ 'keys',
+ 'pop',
+ 'popitem',
+ 'setdefault',
+ 'update',
+ 'values']
+
+In [6]:                                                                                                                      
+
+In [6]:                                                                                                                      
+
+In [6]: nr.inventory.hosts                                                                                                   
+Out[6]: {'device1': Host: device1}
+
+In [7]: nr.inventory.hosts['device1']                                                                                        
+Out[7]: Host: device1
+
+In [8]: nr.inventory.hosts['device1'].hostname                                                                               
+Out[8]: 'localhost'
+
+In [9]:                                                                                                                      
+
+In [9]: nr.inventory                                                                                                         
+Out[9]: <nornir.core.inventory.Inventory at 0x7f2fe6319708>
+
+In [10]:           
