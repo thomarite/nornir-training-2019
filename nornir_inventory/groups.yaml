@@ -4,6 +4,7 @@ ios:
   connection_options:
     netmiko:
       platform: cisco_ios
+      extras: {}
     napalm:
       extras:
         optional_args: {}
@@ -13,6 +14,7 @@ nxos:
   connection_options:
     netmiko:
       platform: cisco_nxos
+      extras: {}
     napalm:
       port: 8443
       extras:
@@ -34,6 +36,7 @@ junos:
   connection_options:
     netmiko:
       platform: juniper_junos
+      extras: {}
     napalm:
       extras:
         optional_args: {}

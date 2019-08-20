@@ -1,3 +1,4 @@
 .cache/
 .ipython/
 .viminfo
+.bash_history
