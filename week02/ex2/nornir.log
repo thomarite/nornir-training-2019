@@ -1,0 +1,8 @@
+2019-08-21 14:56:02,177 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | inc hostname'} on 2 hosts
+2019-08-21 14:58:52,306 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | inc hostname'} on 2 hosts
+2019-08-21 15:10:01,421 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | inc hostname'} on 2 hosts
+2019-08-21 15:25:24,406 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | inc hostname'} on 2 hosts
+2019-08-21 15:29:06,533 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | inc hostname'} on 2 hosts
+2019-08-21 15:31:24,457 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | inc hostname'} on 2 hosts
+2019-08-21 15:38:09,357 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | inc hostname'} on 2 hosts
+2019-08-21 15:42:21,728 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | inc hostname'} on 2 hosts

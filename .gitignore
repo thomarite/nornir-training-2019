@@ -2,3 +2,4 @@
 .ipython/
 .viminfo
 .bash_history
+.ssh/
