@@ -418,3 +418,59 @@ ls -ltr
 mv ex3a.py ex4a.py
 vim ex4a.py 
 python ex4a.py 
+ls
+ls -ltr
+git status
+ls -lrt .ssh/
+cd week02/
+ls
+ls -ltr
+cd ex3/
+ls
+ls -ltr
+cat ex3a.py 
+cd ..
+cd ex4/
+ls
+ls -ltr
+vim ex4a.py 
+python ex4a.py 
+python
+vim ex4a.py 
+python ex4a.py 
+ls -ltr
+cd ..
+ls -ltr
+mkdir ex5
+cd ex5/
+cp ../ex4/config.yaml .
+cp ../ex4/ex4a.py .
+ls -ltr
+mv ex4a.py ex5a.py 
+cp ../ex3/ex3a.py ex5a.py 
+ls
+ls -ltr
+vim ex5a.py 
+python ex5a.py 
+vim ex5a.py 
+vim ../ex3/ex3a.py 
+python ex5a.py 
+vim ../ex4/ex4a.py 
+vim ex5a.py 
+cp ex5a.py ex5b.py 
+vim ex5b.py 
+python ex5b.py 
+vim ex5b.py 
+cd ..
+git status
+git add week02
+git status
+cat .ssh/known_hosts 
+vim .gitignore 
+git status
+git add .gitignore 
+git status
+vim .gitignore 
+git status
+git commit -m "week2 exercises so far" -a
+git status
