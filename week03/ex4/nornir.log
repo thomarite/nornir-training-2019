@@ -1,0 +1,7 @@
+2019-08-26 07:30:28,272 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show interface status', 'use_textfsm': True} on 4 hosts
+2019-08-26 07:33:20,550 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show interface status', 'use_textfsm': True} on 4 hosts
+2019-08-26 07:40:36,352 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show interface status', 'use_textfsm': True} on 4 hosts
+2019-08-26 07:52:46,635 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show interface status', 'use_textfsm': True} on 4 hosts
+2019-08-26 07:53:34,908 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show interface status', 'use_textfsm': True} on 4 hosts
+2019-08-26 07:57:41,911 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show interface status', 'use_textfsm': True} on 4 hosts
+2019-08-26 07:59:21,583 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show interface status', 'use_textfsm': True} on 4 hosts
