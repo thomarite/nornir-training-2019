@@ -474,3 +474,62 @@ vim .gitignore
 git status
 git commit -m "week2 exercises so far" -a
 git status
+
+git status
+cd week02/
+ls
+ls -ltr
+cd ex5/
+ls
+ls -ltr
+vim ex5b.py 
+cp ex5b.py ex5c.py
+vim ex5c.py 
+vim ex5a.py 
+vim ex5c.py 
+python ex5c.py 
+vim ex5c.py 
+python ex5c.py 
+cp ex5c.py  ex5d.py
+vim ex5d.py
+python ex5d.py 
+vim ex5d.py
+python ex5d.py 
+vim ex5d.py
+python ex5d.py 
+vim ex5d.py
+python ex5d.py 
+vim ex5d.py
+python ex5d.py 
+pwd
+cd ..
+ls
+cd ..
+ls -ltr
+mkdi week03
+mkdir week03
+cd week03/
+ls
+ls -ltr ../week02/
+mkdir ex1
+cd ex1/
+ls
+ls -ltr
+pwd
+cd
+git status
+git add week02/*
+git status
+git commit -m "completed week2 exercicesgit status" -a
+rebase
+git status
+ks
+ls
+ls -ltr
+git status
+cd week02/
+ls
+cd ex5/
+ls
+ls -ltr
+vi ex5d.py 
