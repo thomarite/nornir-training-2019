@@ -533,3 +533,296 @@ cd ex5/
 ls
 ls -ltr
 vi ex5d.py 
+ls
+ls -ltr
+cd week03/
+ls
+cd ex1/
+ls
+ls -ltr
+vim hosts.yaml
+vim groups.yaml
+vim ex1a.py
+python ex1a.py 
+ls
+python ex1a.py 
+vim ex1a.py
+python ex1a.py 
+s
+ls
+rm config.yaml 
+vim ex1a.py
+python ex1a.py 
+ls
+ls -ltr
+cd ..
+ls
+mv ex1 ex1a
+cp -r ex1a ex1b
+cd ex1b/
+ls
+vim groups.yaml 
+ls -ltr
+mv ex1a.py ex1b.py
+vim ex1b.py 
+python ex1b.py 
+vim ex1b.py 
+python ex1b.py 
+vim groups.yaml 
+vim hosts.yaml 
+cd ..
+ls
+mkdir ex2
+ls
+cd ex2/
+ls
+ls -ltr
+mv ex1b.py ex2a.py
+vim ex2a.py 
+python ex2a.py 
+vim ex2a.py 
+python ex2a.py 
+vim ex2a.py 
+python ex2a.py 
+vim ex2a.py 
+ls -ltr
+vim hosts.yaml 
+vim ex2a.py 
+python ex2
+cp ex2a.py ex2b.py 
+vim ex2b.py 
+python ex2b.py 
+vim ex2b.py 
+ls
+cp ex2b.py ex2c.py
+vim ex2c.py 
+python ex2c.py 
+vim ex2c.py 
+cd ..
+ls -ltr
+mkdir ex3
+cd ex3/
+ls
+ls -ltr
+mv ex2c.py ex3a.py 
+vim ex3a.py 
+python ex3a.py 
+pwd
+ls
+cp ex3a.py ex3b.py 
+vim ex3b.py 
+python ex3b.py 
+vim ex3b.py 
+python ex3b.py 
+cp ex3b.py ex3c.py 
+vim ex3c.py 
+python ex3c.py 
+cp ex3c.py ex3d.py 
+vim ex3d.py 
+python ex3d.py 
+vim ex3c.py 
+vim ex3d.py 
+python ex3c.py 
+python ex3d.py 
+vim ex3a.py 
+vim ex3b.py 
+vim ex3c.py 
+cd ..
+ls
+mkdi ex4
+mkdir ex4
+cd ex4/
+vim config.yaml
+ls -ltr
+vim ex4a.py
+ls
+mv ex5a.py ex4a.py 
+vim ex4a.py
+python ex4a.py 
+git status
+cd ..
+ls
+ls -ltr
+git status
+git add week03
+git commit -m "exercices for week3 so far" -a
+cd week03/ex4/
+ls
+ls -ltr
+cp ex4a.py ex4b.py
+vim ex4b.py 
+python ex4b.py 
+vim ex4b.py 
+python ex4b.py 
+[B
+ls
+cp config.yaml ../ex5/
+q
+cd ..
+ls
+cd ex5/
+ls
+ls -ltr
+vim ex5a.txt
+ls -ltr
+rm ex4c.py
+vim ex5a.txt 
+cd ..
+ls
+mkdir ex6
+cd ex6
+ls -ltr
+cd ..
+ls -ltr
+cd ex6/
+cp ../ex4/config.yaml .
+cp ../ex4/ex4c.py .
+ls -ltr
+mv ex4c.py ex6a.py
+vim ex6a.py
+python ex6a.py 
+vim ex6a.py
+python ex6a.py 
+vim ex6a.py
+cp ex6a.py ex6b.py 
+vim ex6b.py 
+python ex6b.py 
+cp ex6b.py ex6c.py 
+vim ex6c.py 
+python ex6c.py 
+ls
+ls -ltr
+cp ex6c.py ex6d.py
+vim ex6d.py 
+ls
+ls -ltr
+vim ex6c.py 
+vim ex6b.py 
+vim ex6a.py 
+python ex6a.py 
+vim ex6a.py 
+python ex6a.py 
+vim ex6a.py 
+vim ex6c.py 
+python ex6c.py 
+cd
+git status
+git add week03/*
+git status
+git commit -m "completed week3 exercises" -a
+ls
+cd week02/
+ls
+ls -ltr
+cd ex5/
+ls
+cat ex5d.py 
+ls
+cat config.yaml 
+ls
+cp config.yaml ../../week03/ex1/
+cd
+cd week03/
+ls
+ls -ltr
+cd ex1b/
+ls
+vim ex1b.py 
+python ex1b.py 
+vim ex1b.py 
+python ex1b.py 
+vim ex1b.py 
+python ex1b.py 
+vim ex1b.py 
+python ex1b.py 
+vim ex1b.py 
+python ex1b.py 
+vim ex1b.py 
+ls
+cp groups.yaml hosts.yaml ../ex2/
+cp ex1b.py ../ex2/
+pwd
+cd ../
+ls
+cd ex2/
+ls
+ls -ltr
+cp *.yaml ../ex3/
+cp ex2c.py ../ex3/
+ls -ltr
+vim groups.yaml 
+vim hosts.yaml 
+pwd
+cd ..
+cd ex3/
+ls
+ls -ltr
+ls
+vim hosts.yaml 
+vim ex3a.py 
+cp ex3a.py ../ex4/ex5a.py
+#
+pwd
+cd ../
+ls
+cd ex4/
+ls
+ls -lt
+vim ex4a.py 
+cd ..
+cd ex3/
+ls
+vim ex3d.py 
+cd ..
+cd ex4/
+ls
+ls -ltr
+vim ex4b.py 
+cp ex4b.py ex4c.py 
+vim ex4c.py 
+python ex4c.py 
+vim ex4c.py 
+python ex4c.py 
+vim ex4c.py 
+python ex4c.py 
+vim ex4c.py 
+python ex4c.py 
+vim ex4c.py 
+cd ..
+ls#
+ls
+ls -ltr
+mkdir ex5
+cd ex5/
+ls
+cp ../ex4/ex4c.py .
+ls
+ls -ltr
+python -m ipdb ex4c.py 
+#
+ls
+ls -ltr
+vim ex5a-reference.p
+python -m ipdb ex5a-reference.py 
+cd ../ex6/
+ls
+ls -ltr
+vim ex6d.py 
+python ex6d.py 
+vim ex6d.py 
+python ex6d.py 
+vim ex6d.py 
+python ex6d.py 
+ls -ltr
+python ex6d.py 
+vim ex6d.py 
+python ex6d.py 
+vim ex6d.py 
+python ex6d.py 
+vim ex6d.py 
+python ex6d.py 
+ls
+cd
+ls
+ls -ltr
+mkdir week04
