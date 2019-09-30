@@ -826,3 +826,98 @@ cd
 ls
 ls -ltr
 mkdir week04
+ls
+ls -ltr
+cd week04/
+ls
+mkdir ex1
+cd ex1/
+ls
+ls -ltr
+cp ex6a.py ex1a.py
+vim  ex1a.py 
+python ex1a.py 
+ls
+rm ex6a.py 
+vi ex1a.py 
+python ex1a.py 
+vi ex1a.py 
+python ex1a.py 
+vi ex1a.py 
+python ex1a.py 
+vi ex1a.py 
+python ex1a.py 
+ls -ltr
+cp ex1a.py ex1b.py 
+vim ex1b.py 
+bc
+vim ex1b.py 
+python ex1b.py 
+vim ex1b.py 
+python ex1b.py 
+vim ex1b.py 
+cd ..
+ls
+mkdir ex2
+cp ex1/config.yaml ex2/
+cd ex2/
+ls
+mkdir eos
+cd eos/
+ls
+touch arista_test.txt
+vim arista_test.txt 
+cd ..
+ls
+ls -lr
+ls -ltr
+vim eos/arista_test.txt 
+cd ..
+cd ex2/
+python --version
+cd week03/
+ls
+ls -ltr
+cd ex6/
+ls
+ls -ltr
+cat config.yaml 
+cp config.yaml ../../week04/ex1/
+cp ex6a.py ../../week04/ex1/
+cd
+ls
+ls -ltr
+cd week04/ex1/
+ls
+ls -ltr
+vim ex1b.py 
+python ex1b.py 
+vim ex1b.py 
+python ex1b.py 
+vim ex1b.py 
+python ex1b.py 
+vim ex1b.py 
+cd
+ls -ltr
+cd nornir_inventory/
+ls
+cp defaults.yaml groups.yaml hosts.yaml ../
+cd
+vim groups.yaml 
+ls -ltr
+mv hosts.yaml defaults.yaml groups.yaml week04/ex2/
+pwd
+git status
+git add week04
+git commit -m "adding exercices from week04" -a
+git status
+cd week04/ex
+cd week04/ex2/
+ls
+ls -ltr
+vim groups.yaml 
+vim ex2a.py
+python ex2a.py 
+vim ex2a.py
+python ex2a.py 
+;1R

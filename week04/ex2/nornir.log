@@ -1,0 +1,695 @@
+2019-09-30 15:52:53,332 -  nornir.core -     INFO -        run() - Running task 'file_copy' with args {} on 4 hosts
+2019-09-30 15:52:54,200 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 9, in file_copy
+    group_name = task.host.platform
+  File "ex2a.py", line 9, in file_copy
+    group_name = task.host.platform
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 69, in dispatch_line
+    self.user_line(frame)
+  File "/usr/lib64/python3.6/pdb.py", line 261, in user_line
+    self.interaction(frame, None)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/IPython/core/debugger.py", line 296, in interaction
+    OldPdb.interaction(self, frame, traceback)
+  File "/usr/lib64/python3.6/pdb.py", line 352, in interaction
+    self._cmdloop()
+  File "/usr/lib64/python3.6/pdb.py", line 321, in _cmdloop
+    self.cmdloop()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/IPython/terminal/debugger.py", line 89, in cmdloop
+    line = self.pt_app.prompt() # reset_current_buffer=True)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/shortcuts/prompt.py", line 738, in prompt
+    return run_sync()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/shortcuts/prompt.py", line 727, in run_sync
+    return self.app.run(inputhook=self.inputhook, pre_run=pre_run2)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 709, in run
+    return run()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 682, in run
+    run_until_complete(f, inputhook=inputhook)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/defaults.py", line 123, in run_until_complete
+    return get_event_loop().run_until_complete(future, inputhook=inputhook)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/posix.py", line 57, in run_until_complete
+    raise Exception('Event loop is already running')
+Exception: Event loop is already running
+
+2019-09-30 15:52:54,200 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 9, in file_copy
+    group_name = task.host.platform
+  File "ex2a.py", line 9, in file_copy
+    group_name = task.host.platform
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 69, in dispatch_line
+    self.user_line(frame)
+  File "/usr/lib64/python3.6/pdb.py", line 261, in user_line
+    self.interaction(frame, None)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/IPython/core/debugger.py", line 296, in interaction
+    OldPdb.interaction(self, frame, traceback)
+  File "/usr/lib64/python3.6/pdb.py", line 352, in interaction
+    self._cmdloop()
+  File "/usr/lib64/python3.6/pdb.py", line 321, in _cmdloop
+    self.cmdloop()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/IPython/terminal/debugger.py", line 89, in cmdloop
+    line = self.pt_app.prompt() # reset_current_buffer=True)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/shortcuts/prompt.py", line 738, in prompt
+    return run_sync()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/shortcuts/prompt.py", line 727, in run_sync
+    return self.app.run(inputhook=self.inputhook, pre_run=pre_run2)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 709, in run
+    return run()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 682, in run
+    run_until_complete(f, inputhook=inputhook)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/defaults.py", line 123, in run_until_complete
+    return get_event_loop().run_until_complete(future, inputhook=inputhook)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/posix.py", line 57, in run_until_complete
+    raise Exception('Event loop is already running')
+Exception: Event loop is already running
+
+2019-09-30 15:52:54,200 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 9, in file_copy
+    group_name = task.host.platform
+  File "ex2a.py", line 9, in file_copy
+    group_name = task.host.platform
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 69, in dispatch_line
+    self.user_line(frame)
+  File "/usr/lib64/python3.6/pdb.py", line 261, in user_line
+    self.interaction(frame, None)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/IPython/core/debugger.py", line 296, in interaction
+    OldPdb.interaction(self, frame, traceback)
+  File "/usr/lib64/python3.6/pdb.py", line 352, in interaction
+    self._cmdloop()
+  File "/usr/lib64/python3.6/pdb.py", line 321, in _cmdloop
+    self.cmdloop()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/IPython/terminal/debugger.py", line 89, in cmdloop
+    line = self.pt_app.prompt() # reset_current_buffer=True)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/shortcuts/prompt.py", line 738, in prompt
+    return run_sync()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/shortcuts/prompt.py", line 727, in run_sync
+    return self.app.run(inputhook=self.inputhook, pre_run=pre_run2)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 709, in run
+    return run()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 682, in run
+    run_until_complete(f, inputhook=inputhook)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/defaults.py", line 123, in run_until_complete
+    return get_event_loop().run_until_complete(future, inputhook=inputhook)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/posix.py", line 57, in run_until_complete
+    raise Exception('Event loop is already running')
+Exception: Event loop is already running
+
+2019-09-30 15:52:54,204 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 9, in file_copy
+    group_name = task.host.platform
+  File "ex2a.py", line 9, in file_copy
+    group_name = task.host.platform
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 69, in dispatch_line
+    self.user_line(frame)
+  File "/usr/lib64/python3.6/pdb.py", line 261, in user_line
+    self.interaction(frame, None)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/IPython/core/debugger.py", line 296, in interaction
+    OldPdb.interaction(self, frame, traceback)
+  File "/usr/lib64/python3.6/pdb.py", line 352, in interaction
+    self._cmdloop()
+  File "/usr/lib64/python3.6/pdb.py", line 321, in _cmdloop
+    self.cmdloop()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/IPython/terminal/debugger.py", line 89, in cmdloop
+    line = self.pt_app.prompt() # reset_current_buffer=True)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/shortcuts/prompt.py", line 738, in prompt
+    return run_sync()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/shortcuts/prompt.py", line 727, in run_sync
+    return self.app.run(inputhook=self.inputhook, pre_run=pre_run2)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 709, in run
+    return run()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 683, in run
+    return f.result()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/future.py", line 149, in result
+    raise self._exception
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/coroutine.py", line 90, in step_next
+    new_f = coroutine.throw(exc)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 658, in _run_async2
+    result = yield f
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/coroutine.py", line 86, in step_next
+    new_f = coroutine.send(None)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 598, in _run_async
+    with self.input.attach(read_from_input):
+  File "/usr/lib64/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/input/vt100.py", line 147, in _attached_input
+    loop.add_reader(fd, callback)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/posix.py", line 272, in add_reader
+    self.selector.register(fd)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/select.py", line 76, in register
+    sel.register(fd)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/select.py", line 131, in register
+    self._sel.register(fd, selectors.EVENT_READ, None)
+  File "/usr/lib64/python3.6/selectors.py", line 405, in register
+    key = super().register(fileobj, events, data)
+  File "/usr/lib64/python3.6/selectors.py", line 241, in register
+    .format(fileobj, key.fd))
+KeyError: '0 (FD 0) is already registered'
+
+2019-09-30 15:56:09,748 -  nornir.core -     INFO -        run() - Running task 'file_copy' with args {} on 4 hosts
+2019-09-30 16:05:42,628 -  nornir.core -     INFO -        run() - Running task 'file_copy' with args {} on 4 hosts
+2019-09-30 16:05:42,629 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 11, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:05:42,629 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 11, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:05:42,629 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 11, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:05:42,629 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 11, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:06:06,625 -  nornir.core -     INFO -        run() - Running task 'file_copy' with args {} on 4 hosts
+2019-09-30 16:06:06,626 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 11, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:06:06,626 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 11, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:06:06,626 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 11, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:06:06,626 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 11, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:06:39,459 -  nornir.core -     INFO -        run() - Running task 'file_copy' with args {} on 4 hosts
+2019-09-30 16:06:39,459 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 11, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:06:39,460 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 11, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:06:39,460 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 11, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:06:39,460 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 11, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:07:06,632 -  nornir.core -     INFO -        run() - Running task 'file_copy' with args {} on 4 hosts
+2019-09-30 16:07:06,633 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 12, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:07:06,633 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 12, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:07:06,633 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 12, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:07:06,634 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 12, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:07:25,975 -  nornir.core -     INFO -        run() - Running task 'file_copy' with args {} on 4 hosts
+2019-09-30 16:07:25,976 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 12, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:07:25,976 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 12, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:07:25,977 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 12, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:07:25,977 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 12, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:07:29,693 -  nornir.core -     INFO -        run() - Running task 'file_copy' with args {} on 4 hosts
+2019-09-30 16:07:29,694 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 12, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:07:29,695 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 12, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:07:29,695 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 12, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:07:29,695 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 12, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:08:35,929 -  nornir.core -     INFO -        run() - Running task 'file_copy' with args {} on 4 hosts
+2019-09-30 16:08:35,930 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 12, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:08:35,931 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 12, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:08:35,931 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 12, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:08:35,931 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 12, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:09:00,576 -  nornir.core -     INFO -        run() - Running task 'file_copy' with args {} on 4 hosts
+2019-09-30 16:09:00,577 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 13, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:09:00,578 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 13, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:09:00,578 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 13, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:09:00,578 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 13, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:10:52,454 -  nornir.core -     INFO -        run() - Running task 'file_copy' with args {} on 4 hosts
+2019-09-30 16:10:52,455 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 14, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:10:52,455 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 14, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:10:52,456 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 14, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:10:52,456 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 14, in file_copy
+    base_file = task.host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:11:43,444 -  nornir.core -     INFO -        run() - Running task 'file_copy' with args {} on 4 hosts
+2019-09-30 16:11:43,445 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 15, in file_copy
+    base_file = host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:11:43,446 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 15, in file_copy
+    base_file = host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:11:43,446 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 15, in file_copy
+    base_file = host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:11:43,446 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 15, in file_copy
+    base_file = host["file_name"]
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 150, in __getitem__
+    return self.data[item]
+KeyError: 'file_name'
+
+2019-09-30 16:15:22,065 -  nornir.core -     INFO -        run() - Running task 'file_copy' with args {} on 4 hosts
+2019-09-30 16:15:43,194 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'netmiko_file_transfer' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_file_transfer.py", line 28, in netmiko_file_transfer
+    net_connect, source_file=source_file, dest_file=dest_file, **kwargs
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/scp_functions.py", line 77, in file_transfer
+    with TransferClass(**scp_args) as scp_transfer:
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 275, in FileTransfer
+    return FileTransferClass(*args, **kwargs)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/arista/arista.py", line 73, in __init__
+    direction=direction,
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/scp_handler.py", line 80, in __init__
+    self.source_md5 = self.file_md5(source_file)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/scp_handler.py", line 257, in file_md5
+    with open(file_name, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'eos/arista1_test.txt'
+
+2019-09-30 16:15:43,195 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 26, in file_copy
+    direction="put",
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_file_transfer (failed)
+
+
+2019-09-30 16:16:04,245 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'netmiko_file_transfer' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_file_transfer.py", line 28, in netmiko_file_transfer
+    net_connect, source_file=source_file, dest_file=dest_file, **kwargs
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/scp_functions.py", line 77, in file_transfer
+    with TransferClass(**scp_args) as scp_transfer:
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 275, in FileTransfer
+    return FileTransferClass(*args, **kwargs)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/arista/arista.py", line 73, in __init__
+    direction=direction,
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/scp_handler.py", line 80, in __init__
+    self.source_md5 = self.file_md5(source_file)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/scp_handler.py", line 257, in file_md5
+    with open(file_name, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'eos/arista1_test.txt'
+
+2019-09-30 16:16:04,245 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 26, in file_copy
+    direction="put",
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_file_transfer (failed)
+
+
+2019-09-30 16:16:25,373 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'netmiko_file_transfer' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_file_transfer.py", line 28, in netmiko_file_transfer
+    net_connect, source_file=source_file, dest_file=dest_file, **kwargs
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/scp_functions.py", line 77, in file_transfer
+    with TransferClass(**scp_args) as scp_transfer:
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 275, in FileTransfer
+    return FileTransferClass(*args, **kwargs)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/arista/arista.py", line 73, in __init__
+    direction=direction,
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/scp_handler.py", line 80, in __init__
+    self.source_md5 = self.file_md5(source_file)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/scp_handler.py", line 257, in file_md5
+    with open(file_name, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'eos/arista1_test.txt'
+
+2019-09-30 16:16:25,373 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 26, in file_copy
+    direction="put",
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_file_transfer (failed)
+
+
+2019-09-30 16:16:46,434 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'netmiko_file_transfer' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_file_transfer.py", line 28, in netmiko_file_transfer
+    net_connect, source_file=source_file, dest_file=dest_file, **kwargs
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/scp_functions.py", line 77, in file_transfer
+    with TransferClass(**scp_args) as scp_transfer:
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 275, in FileTransfer
+    return FileTransferClass(*args, **kwargs)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/arista/arista.py", line 73, in __init__
+    direction=direction,
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/scp_handler.py", line 80, in __init__
+    self.source_md5 = self.file_md5(source_file)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/scp_handler.py", line 257, in file_md5
+    with open(file_name, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'eos/arista1_test.txt'
+
+2019-09-30 16:16:46,435 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'file_copy' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2a.py", line 26, in file_copy
+    direction="put",
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_file_transfer (failed)
+
+
+2019-09-30 16:18:00,918 -  nornir.core -     INFO -        run() - Running task 'file_copy' with args {} on 4 hosts
+2019-09-30 16:31:34,260 -  nornir.core -     INFO -        run() - Running task 'file_copy' with args {} on 4 hosts
