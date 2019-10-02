@@ -1,0 +1,91 @@
+2019-10-02 16:11:06,973 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 101, 'vlan_name': 'tmorales-ex3a'} on 6 hosts
+2019-10-02 16:15:39,339 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 101, 'vlan_name': 'tmorales-ex4a'} on 6 hosts
+2019-10-02 16:17:44,186 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 101, 'vlan_name': 'tmorales-ex4a'} on 6 hosts
+2019-10-02 16:17:47,069 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex4a.py", line 14, in add_vlan
+    vlan_cmd = "vlan " + str(vlan_id) + "\n" + "name " + vlan_name
+  File "ex4a.py", line 14, in add_vlan
+    vlan_cmd = "vlan " + str(vlan_id) + "\n" + "name " + vlan_name
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 70, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+2019-10-02 16:17:49,696 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex4a.py", line 14, in add_vlan
+    vlan_cmd = "vlan " + str(vlan_id) + "\n" + "name " + vlan_name
+  File "ex4a.py", line 14, in add_vlan
+    vlan_cmd = "vlan " + str(vlan_id) + "\n" + "name " + vlan_name
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 70, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+2019-10-02 16:17:51,284 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex4a.py", line 14, in add_vlan
+    vlan_cmd = "vlan " + str(vlan_id) + "\n" + "name " + vlan_name
+  File "ex4a.py", line 14, in add_vlan
+    vlan_cmd = "vlan " + str(vlan_id) + "\n" + "name " + vlan_name
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 70, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+2019-10-02 16:17:52,796 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex4a.py", line 14, in add_vlan
+    vlan_cmd = "vlan " + str(vlan_id) + "\n" + "name " + vlan_name
+  File "ex4a.py", line 14, in add_vlan
+    vlan_cmd = "vlan " + str(vlan_id) + "\n" + "name " + vlan_name
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 70, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+2019-10-02 16:17:57,420 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex4a.py", line 14, in add_vlan
+    vlan_cmd = "vlan " + str(vlan_id) + "\n" + "name " + vlan_name
+  File "ex4a.py", line 14, in add_vlan
+    vlan_cmd = "vlan " + str(vlan_id) + "\n" + "name " + vlan_name
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 70, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+2019-10-02 16:18:07,494 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex4a.py", line 14, in add_vlan
+    vlan_cmd = "vlan " + str(vlan_id) + "\n" + "name " + vlan_name
+  File "ex4a.py", line 14, in add_vlan
+    vlan_cmd = "vlan " + str(vlan_id) + "\n" + "name " + vlan_name
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 70, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+2019-10-02 16:23:40,508 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 101, 'vlan_name': 'tmorales-ex4a', 'dry_run': False} on 6 hosts
+2019-10-02 16:23:55,756 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 101, 'vlan_name': 'tmorales-ex4a', 'dry_run': True} on 6 hosts
+2019-10-02 16:25:08,887 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 101, 'vlan_name': 'tmorales-ex4a', 'dry_run': False} on 6 hosts
+2019-10-02 16:25:47,761 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 101, 'vlan_name': 'tmorales-ex4a', 'dry_run': True} on 6 hosts

@@ -1,29 +1,3 @@
-ls -ltr
-rm nornir.log 
-cp groups.yaml defaults.yaml
-vim groups.yaml 
-vim defaults.yaml 
-mv ex2.py ex3.py 
-python ex3.py 
-cat defaults.yaml 
-vim defaults.yaml 
-python ex3.py 
-cd ..
-ls
-cp -r ex3 ex4
-cd ex4/
-s
-ls
-ls -ltr
-cat nornir.log 
-python ex3.py 
-ls -ltr
-rm nornir.log 
-ls
-ls -ltr
-mv ex3.py ex4.py 
-vim ex4.py 
-python ex4.py 
 vim ex4.py 
 python ex4.py 
 vim ex4.py 
@@ -996,5 +970,31 @@ cat config.yaml
 cd
 cat nornir_inventory/hosts.yaml 
 cat nornir_inventory/defaults.yaml 
+ssh arista1.lasthop.io -l pyclass
+ssh nxos1.lasthop.io -l pyclass
+cd week04/ex2/
+ls
+ls -ltr
+vim ex2b.py 
+vim ex2a.py 
+vim ex2c.py 
+cd ../ex1/
+ls
+ls -ltr
+less ex1b.py 
+pwd
+cd ../ex3/
+ls
+ls -ltr
+vim ex3a.py 
+cd
+pwd
+cd -
+w
+cd
+ssh arista1.lasthop.io -l pyclass
+ssh nxos1.lasthop.io -l pyclass
+ssh arista1.lasthop.io -l pyclass
+ssh nxos1.lasthop.io -l pyclass
 ssh arista1.lasthop.io -l pyclass
 ssh nxos1.lasthop.io -l pyclass

@@ -1,0 +1,5 @@
+2019-10-02 16:32:28,135 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['config'], 'retrieve': 'running'} on 1 hosts
+2019-10-02 16:34:12,995 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['config'], 'retrieve': 'running'} on 1 hosts
+2019-10-02 16:40:55,295 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': 'interface loopback123\n description Done by tmorales-ex5b'} on 1 hosts
+2019-10-02 16:41:34,029 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': 'interface loopback123\n description Done by tmorales-ex5b'} on 1 hosts
+2019-10-02 16:41:52,763 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': 'interface loopback123\n description Done by tmorales-ex5b'} on 1 hosts
