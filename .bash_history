@@ -921,3 +921,64 @@ python ex2a.py
 vim ex2a.py
 python ex2a.py 
 ;1R
+w
+ls -ltr
+cd week04/
+ls
+ls -ltr
+cd ex2/
+ls
+ls -ltr
+vim ex2a.py 
+python ex2a.py 
+cd ../ex1/
+ls
+vim ex1a.py 
+python ex2b
+ls
+cd week04/ex2/
+ls
+ls -ltr
+ls
+cd ..
+cd ex1/
+ls
+vim ex1a.py 
+cd ../ex2/
+ls
+ls -ltr
+vim groups.yaml 
+w
+df -hT
+top
+df -hT
+w
+vim groups.yaml 
+vim ex2a.py 
+python ex2a.py 
+vim ex2a.py 
+vim groups.yaml 
+ls -ltr
+vim hosts.yaml 
+vim config.yaml 
+vim ex2a.py 
+cat eos/arista_test.txt 
+cd eos/
+mv arista_test.txt arista1_test.txt 
+cd ..
+vim ex2a.py 
+cp ex2a.py ex2b.py 
+vim ex2b.py 
+python ex2b.py 
+vim ex2b.py 
+python ex2b.py 
+ls
+cd ..
+git status
+cd ..
+ls -ltr
+git status
+git add week04/
+git status
+git commit -m "adding more exercises from week4" -a
+rebase

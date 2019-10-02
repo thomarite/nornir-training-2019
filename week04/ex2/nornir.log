@@ -693,3 +693,5 @@ nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_file_transfer (faile
 
 2019-09-30 16:18:00,918 -  nornir.core -     INFO -        run() - Running task 'file_copy' with args {} on 4 hosts
 2019-09-30 16:31:34,260 -  nornir.core -     INFO -        run() - Running task 'file_copy' with args {} on 4 hosts
+2019-10-01 16:12:06,481 -  nornir.core -     INFO -        run() - Running task 'file_copy' with args {} on 4 hosts
+2019-10-01 16:16:32,657 -  nornir.core -     INFO -        run() - Running task 'file_copy' with args {} on 4 hosts
