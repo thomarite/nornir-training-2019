@@ -41,10 +41,12 @@ def add_vlan(task, vlan_id, vlan_name):
    #import ipdb; ipdb.set_trace()
    if re.search(str(vlan_id), vlan_query) and re.search(vlan_name, vlan_query):
       print("vlan already exists")
+      return Result(host=task.host, changed = False, failed = False, result = "vlan already exists")
    else:
       commands = ["vlan " + str(vlan_id), "name " + vlan_name ] 
       results = task.run(task=networking.netmiko_send_config, config_commands=commands)
       print("vlan created")
+      return Result(host=task.host, changed = True, failed = False, result = "vlan created")
 
 def main():
    nr = InitNornir(config_file="config.yaml")

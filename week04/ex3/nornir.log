@@ -1,1 +1,438 @@
 2019-10-01 17:09:10,872 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 100, 'vlan_name': 'tmorales-ex3a'} on 6 hosts
+2019-10-02 15:20:05,196 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 100, 'vlan_name': 'tmorales-ex3a'} on 6 hosts
+2019-10-02 15:40:34,171 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 100, 'vlan_name': 'tmorales-ex3a'} on 6 hosts
+2019-10-02 15:40:39,355 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 26, in add_vlan
+    vlan_query = resutls[0].result
+NameError: name 'resutls' is not defined
+
+2019-10-02 15:40:39,376 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 26, in add_vlan
+    vlan_query = resutls[0].result
+NameError: name 'resutls' is not defined
+
+2019-10-02 15:40:58,311 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 26, in add_vlan
+    vlan_query = resutls[0].result
+NameError: name 'resutls' is not defined
+
+2019-10-02 15:40:58,559 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 26, in add_vlan
+    vlan_query = resutls[0].result
+NameError: name 'resutls' is not defined
+
+2019-10-02 15:40:58,592 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 26, in add_vlan
+    vlan_query = resutls[0].result
+NameError: name 'resutls' is not defined
+
+2019-10-02 15:40:58,713 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 26, in add_vlan
+    vlan_query = resutls[0].result
+NameError: name 'resutls' is not defined
+
+2019-10-02 15:41:41,510 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 100, 'vlan_name': 'tmorales-ex3a'} on 6 hosts
+2019-10-02 15:41:46,605 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 26, in add_vlan
+    vlan_query = resutls[0].result
+NameError: name 'resutls' is not defined
+
+2019-10-02 15:41:46,715 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 26, in add_vlan
+    vlan_query = resutls[0].result
+NameError: name 'resutls' is not defined
+
+2019-10-02 15:42:05,362 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 26, in add_vlan
+    vlan_query = resutls[0].result
+NameError: name 'resutls' is not defined
+
+2019-10-02 15:42:05,788 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 26, in add_vlan
+    vlan_query = resutls[0].result
+NameError: name 'resutls' is not defined
+
+2019-10-02 15:42:05,808 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 26, in add_vlan
+    vlan_query = resutls[0].result
+NameError: name 'resutls' is not defined
+
+2019-10-02 15:42:05,834 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 26, in add_vlan
+    vlan_query = resutls[0].result
+NameError: name 'resutls' is not defined
+
+2019-10-02 15:44:00,440 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 100, 'vlan_name': 'tmorales-ex3a'} on 6 hosts
+2019-10-02 15:44:05,532 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 41, in add_vlan
+    if re.search(vlan_id, vlan_query) and re.search(vlan_name, vlan_query):
+  File "/home/tmorales/VENV/py3_venv/lib64/python3.6/re.py", line 182, in search
+    return _compile(pattern, flags).search(string)
+  File "/home/tmorales/VENV/py3_venv/lib64/python3.6/re.py", line 300, in _compile
+    raise TypeError("first argument must be string or compiled pattern")
+TypeError: first argument must be string or compiled pattern
+
+2019-10-02 15:44:05,680 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 41, in add_vlan
+    if re.search(vlan_id, vlan_query) and re.search(vlan_name, vlan_query):
+  File "/home/tmorales/VENV/py3_venv/lib64/python3.6/re.py", line 182, in search
+    return _compile(pattern, flags).search(string)
+  File "/home/tmorales/VENV/py3_venv/lib64/python3.6/re.py", line 300, in _compile
+    raise TypeError("first argument must be string or compiled pattern")
+TypeError: first argument must be string or compiled pattern
+
+2019-10-02 15:44:24,545 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 41, in add_vlan
+    if re.search(vlan_id, vlan_query) and re.search(vlan_name, vlan_query):
+  File "/home/tmorales/VENV/py3_venv/lib64/python3.6/re.py", line 182, in search
+    return _compile(pattern, flags).search(string)
+  File "/home/tmorales/VENV/py3_venv/lib64/python3.6/re.py", line 300, in _compile
+    raise TypeError("first argument must be string or compiled pattern")
+TypeError: first argument must be string or compiled pattern
+
+2019-10-02 15:44:24,635 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 41, in add_vlan
+    if re.search(vlan_id, vlan_query) and re.search(vlan_name, vlan_query):
+  File "/home/tmorales/VENV/py3_venv/lib64/python3.6/re.py", line 182, in search
+    return _compile(pattern, flags).search(string)
+  File "/home/tmorales/VENV/py3_venv/lib64/python3.6/re.py", line 300, in _compile
+    raise TypeError("first argument must be string or compiled pattern")
+TypeError: first argument must be string or compiled pattern
+
+2019-10-02 15:44:24,704 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 41, in add_vlan
+    if re.search(vlan_id, vlan_query) and re.search(vlan_name, vlan_query):
+  File "/home/tmorales/VENV/py3_venv/lib64/python3.6/re.py", line 182, in search
+    return _compile(pattern, flags).search(string)
+  File "/home/tmorales/VENV/py3_venv/lib64/python3.6/re.py", line 300, in _compile
+    raise TypeError("first argument must be string or compiled pattern")
+TypeError: first argument must be string or compiled pattern
+
+2019-10-02 15:44:24,787 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 41, in add_vlan
+    if re.search(vlan_id, vlan_query) and re.search(vlan_name, vlan_query):
+  File "/home/tmorales/VENV/py3_venv/lib64/python3.6/re.py", line 182, in search
+    return _compile(pattern, flags).search(string)
+  File "/home/tmorales/VENV/py3_venv/lib64/python3.6/re.py", line 300, in _compile
+    raise TypeError("first argument must be string or compiled pattern")
+TypeError: first argument must be string or compiled pattern
+
+2019-10-02 15:45:47,531 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 100, 'vlan_name': 'tmorales-ex3a'} on 6 hosts
+2019-10-02 15:45:53,462 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 42, in add_vlan
+    if re.search(str(vlan_id), vlan_query) and re.search(vlan_name, vlan_query):
+  File "ex3b.py", line 42, in add_vlan
+    if re.search(str(vlan_id), vlan_query) and re.search(vlan_name, vlan_query):
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 69, in dispatch_line
+    self.user_line(frame)
+  File "/usr/lib64/python3.6/pdb.py", line 261, in user_line
+    self.interaction(frame, None)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/IPython/core/debugger.py", line 296, in interaction
+    OldPdb.interaction(self, frame, traceback)
+  File "/usr/lib64/python3.6/pdb.py", line 352, in interaction
+    self._cmdloop()
+  File "/usr/lib64/python3.6/pdb.py", line 321, in _cmdloop
+    self.cmdloop()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/IPython/terminal/debugger.py", line 89, in cmdloop
+    line = self.pt_app.prompt() # reset_current_buffer=True)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/shortcuts/prompt.py", line 738, in prompt
+    return run_sync()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/shortcuts/prompt.py", line 727, in run_sync
+    return self.app.run(inputhook=self.inputhook, pre_run=pre_run2)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 709, in run
+    return run()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 682, in run
+    run_until_complete(f, inputhook=inputhook)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/defaults.py", line 123, in run_until_complete
+    return get_event_loop().run_until_complete(future, inputhook=inputhook)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/posix.py", line 57, in run_until_complete
+    raise Exception('Event loop is already running')
+Exception: Event loop is already running
+
+2019-10-02 15:45:53,466 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 42, in add_vlan
+    if re.search(str(vlan_id), vlan_query) and re.search(vlan_name, vlan_query):
+  File "ex3b.py", line 42, in add_vlan
+    if re.search(str(vlan_id), vlan_query) and re.search(vlan_name, vlan_query):
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 69, in dispatch_line
+    self.user_line(frame)
+  File "/usr/lib64/python3.6/pdb.py", line 261, in user_line
+    self.interaction(frame, None)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/IPython/core/debugger.py", line 296, in interaction
+    OldPdb.interaction(self, frame, traceback)
+  File "/usr/lib64/python3.6/pdb.py", line 352, in interaction
+    self._cmdloop()
+  File "/usr/lib64/python3.6/pdb.py", line 321, in _cmdloop
+    self.cmdloop()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/IPython/terminal/debugger.py", line 89, in cmdloop
+    line = self.pt_app.prompt() # reset_current_buffer=True)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/shortcuts/prompt.py", line 738, in prompt
+    return run_sync()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/shortcuts/prompt.py", line 727, in run_sync
+    return self.app.run(inputhook=self.inputhook, pre_run=pre_run2)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 709, in run
+    return run()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 683, in run
+    return f.result()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/future.py", line 149, in result
+    raise self._exception
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/coroutine.py", line 90, in step_next
+    new_f = coroutine.throw(exc)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 658, in _run_async2
+    result = yield f
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/coroutine.py", line 86, in step_next
+    new_f = coroutine.send(None)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 598, in _run_async
+    with self.input.attach(read_from_input):
+  File "/usr/lib64/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/input/vt100.py", line 147, in _attached_input
+    loop.add_reader(fd, callback)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/posix.py", line 272, in add_reader
+    self.selector.register(fd)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/select.py", line 76, in register
+    sel.register(fd)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/select.py", line 131, in register
+    self._sel.register(fd, selectors.EVENT_READ, None)
+  File "/usr/lib64/python3.6/selectors.py", line 405, in register
+    key = super().register(fileobj, events, data)
+  File "/usr/lib64/python3.6/selectors.py", line 241, in register
+    .format(fileobj, key.fd))
+KeyError: '0 (FD 0) is already registered'
+
+2019-10-02 15:46:11,816 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 42, in add_vlan
+    if re.search(str(vlan_id), vlan_query) and re.search(vlan_name, vlan_query):
+  File "ex3b.py", line 42, in add_vlan
+    if re.search(str(vlan_id), vlan_query) and re.search(vlan_name, vlan_query):
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 69, in dispatch_line
+    self.user_line(frame)
+  File "/usr/lib64/python3.6/pdb.py", line 261, in user_line
+    self.interaction(frame, None)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/IPython/core/debugger.py", line 296, in interaction
+    OldPdb.interaction(self, frame, traceback)
+  File "/usr/lib64/python3.6/pdb.py", line 352, in interaction
+    self._cmdloop()
+  File "/usr/lib64/python3.6/pdb.py", line 321, in _cmdloop
+    self.cmdloop()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/IPython/terminal/debugger.py", line 89, in cmdloop
+    line = self.pt_app.prompt() # reset_current_buffer=True)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/shortcuts/prompt.py", line 738, in prompt
+    return run_sync()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/shortcuts/prompt.py", line 727, in run_sync
+    return self.app.run(inputhook=self.inputhook, pre_run=pre_run2)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 709, in run
+    return run()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 683, in run
+    return f.result()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/future.py", line 149, in result
+    raise self._exception
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/coroutine.py", line 90, in step_next
+    new_f = coroutine.throw(exc)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 658, in _run_async2
+    result = yield f
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/coroutine.py", line 86, in step_next
+    new_f = coroutine.send(None)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 598, in _run_async
+    with self.input.attach(read_from_input):
+  File "/usr/lib64/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/input/vt100.py", line 147, in _attached_input
+    loop.add_reader(fd, callback)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/posix.py", line 272, in add_reader
+    self.selector.register(fd)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/select.py", line 76, in register
+    sel.register(fd)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/select.py", line 131, in register
+    self._sel.register(fd, selectors.EVENT_READ, None)
+  File "/usr/lib64/python3.6/selectors.py", line 405, in register
+    key = super().register(fileobj, events, data)
+  File "/usr/lib64/python3.6/selectors.py", line 241, in register
+    .format(fileobj, key.fd))
+KeyError: '0 (FD 0) is already registered'
+
+2019-10-02 15:46:11,937 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 42, in add_vlan
+    if re.search(str(vlan_id), vlan_query) and re.search(vlan_name, vlan_query):
+  File "ex3b.py", line 42, in add_vlan
+    if re.search(str(vlan_id), vlan_query) and re.search(vlan_name, vlan_query):
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 69, in dispatch_line
+    self.user_line(frame)
+  File "/usr/lib64/python3.6/pdb.py", line 261, in user_line
+    self.interaction(frame, None)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/IPython/core/debugger.py", line 296, in interaction
+    OldPdb.interaction(self, frame, traceback)
+  File "/usr/lib64/python3.6/pdb.py", line 352, in interaction
+    self._cmdloop()
+  File "/usr/lib64/python3.6/pdb.py", line 321, in _cmdloop
+    self.cmdloop()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/IPython/terminal/debugger.py", line 89, in cmdloop
+    line = self.pt_app.prompt() # reset_current_buffer=True)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/shortcuts/prompt.py", line 738, in prompt
+    return run_sync()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/shortcuts/prompt.py", line 727, in run_sync
+    return self.app.run(inputhook=self.inputhook, pre_run=pre_run2)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 709, in run
+    return run()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 682, in run
+    run_until_complete(f, inputhook=inputhook)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/defaults.py", line 123, in run_until_complete
+    return get_event_loop().run_until_complete(future, inputhook=inputhook)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/posix.py", line 57, in run_until_complete
+    raise Exception('Event loop is already running')
+Exception: Event loop is already running
+
+2019-10-02 15:46:11,976 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 42, in add_vlan
+    if re.search(str(vlan_id), vlan_query) and re.search(vlan_name, vlan_query):
+  File "ex3b.py", line 42, in add_vlan
+    if re.search(str(vlan_id), vlan_query) and re.search(vlan_name, vlan_query):
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 69, in dispatch_line
+    self.user_line(frame)
+  File "/usr/lib64/python3.6/pdb.py", line 261, in user_line
+    self.interaction(frame, None)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/IPython/core/debugger.py", line 296, in interaction
+    OldPdb.interaction(self, frame, traceback)
+  File "/usr/lib64/python3.6/pdb.py", line 352, in interaction
+    self._cmdloop()
+  File "/usr/lib64/python3.6/pdb.py", line 321, in _cmdloop
+    self.cmdloop()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/IPython/terminal/debugger.py", line 89, in cmdloop
+    line = self.pt_app.prompt() # reset_current_buffer=True)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/shortcuts/prompt.py", line 738, in prompt
+    return run_sync()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/shortcuts/prompt.py", line 727, in run_sync
+    return self.app.run(inputhook=self.inputhook, pre_run=pre_run2)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 709, in run
+    return run()
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/application/application.py", line 682, in run
+    run_until_complete(f, inputhook=inputhook)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/defaults.py", line 123, in run_until_complete
+    return get_event_loop().run_until_complete(future, inputhook=inputhook)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/prompt_toolkit/eventloop/posix.py", line 57, in run_until_complete
+    raise Exception('Event loop is already running')
+Exception: Event loop is already running
+
+2019-10-02 15:46:35,675 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 43, in add_vlan
+    print("vlan already exists")
+  File "ex3b.py", line 43, in add_vlan
+    print("vlan already exists")
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 70, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+2019-10-02 15:47:30,144 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 100, 'vlan_name': 'tmorales-ex3a'} on 6 hosts
+2019-10-02 15:49:45,457 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 68, in start
+    if not isinstance(r, Result):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 68, in start
+    if not isinstance(r, Result):
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 70, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+2019-10-02 15:50:16,880 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'add_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex3b.py", line 43, in add_vlan
+    print("vlan already exists")
+  File "/usr/lib64/python3.6/bdb.py", line 55, in trace_dispatch
+    return self.dispatch_return(frame, arg)
+  File "/usr/lib64/python3.6/bdb.py", line 99, in dispatch_return
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+2019-10-02 15:51:19,210 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 100, 'vlan_name': 'tmorales-ex3a'} on 6 hosts
+2019-10-02 15:51:32,363 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 100, 'vlan_name': 'tmorales-ex3a'} on 6 hosts
+2019-10-02 15:53:10,170 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 100, 'vlan_name': 'tmorales-ex3a'} on 6 hosts
+2019-10-02 15:57:40,538 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 100, 'vlan_name': 'tmorales-ex3a'} on 6 hosts
+2019-10-02 15:58:39,344 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 100, 'vlan_name': 'tmorales-ex3a'} on 6 hosts

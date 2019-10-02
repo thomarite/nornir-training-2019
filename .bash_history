@@ -1,83 +1,3 @@
-pas
-passwd 
-exit
-ls
-ls -ltr
-uname -a
-ls -ltra
-mkdir week01
-cd week01/
-ls
-vim hosts.yml
-ipython
-ls
-mv hosts.yml hosts.yaml
-ipython
-vim hosts.yaml 
-ipython
-ls
-ls -ltr
-vim ex1.txt
-ls -ltr
-mkdir ex1
-mv nornir.log hosts.yaml ex1.txt ex1/
-ls
-cd ..
-cp -r week01 week02
-cd week02/
-ls
-ls -ltr
-cd ..
-ls
-ls -ltr
-rm -rf week02
-ls
-ls -ltr
-cd week01/
-ls
-ls -ltr
-cp -r ex1 ex2
-cd ex
-cd ex2/
-ls
-ls -ltr
-rm ex1.txt 
-vim hosts.yaml 
-vim groups.yaml
-ls -ltr
-rm nornir.log 
-ls -ltr
-vim ex2.py
-vim ex2.py 
-python ex2.py 
-vim ex2.py 
-python ex2.py 
-ls
-ls -ltr
-cd week01/
-ls
-cd ex2/
-ls
-ls -ltr
-vim ex2.py 
-python ex2.py 
-ls -ltr
-vim hosts.yaml 
-vim groups.yaml 
-cat hosts.yaml 
-cat groups.yaml 
-vim hosts.yaml 
-cat groups.yaml 
-python ex2.py 
-vim ex2.py 
-python ex2.py 
-vim ex2.py 
-python ex2.py 
-cd ..
-ls -ltr
-cp -r ex2 ex3
-cd ex3/
-ls
 ls -ltr
 rm nornir.log 
 cp groups.yaml defaults.yaml
@@ -982,3 +902,99 @@ git add week04/
 git status
 git commit -m "adding more exercises from week4" -a
 rebase
+cd week04/
+ls
+ls -ltr
+cd ex2/
+ls
+ls -ltr
+ls -ltr eos/
+vim ex2c.py
+ls -ltr eos/
+rm eos/arista*.lasthop.io
+ls -ltr eos/
+ls
+cd ..
+cd ex3/
+ls
+ls -ltr
+cat config.yaml 
+cd
+cat nornir_inventory/hosts.yaml 
+ssh arista1.lasthop.io -l pyclass
+ls -ltr
+cd nornir_inventory/
+ls
+ls -ltr
+cat groups.yaml 
+cat defaults.yaml 
+ssh arista1.lasthop.io -l pyclass
+ssh nxos1 -l pyclass
+ssh 
+ls
+cat hosts.yaml 
+ssh nxos1
+ssh arista1
+ssh nxos1.lasthop.io -l pyclass
+ls
+cd week04/
+ls
+ls -ltr
+cd ex2/
+ls
+ls -ltr
+ls
+ls -ltr
+cp ex2b.py ex2c.py 
+vim ex2c.py
+ls -ltr
+python ex2c.py 
+vim ex2c.py
+python ex2c.py 
+cd ..
+mkdir  ex3
+cd ex3/
+ls
+ls -ltr
+cd ..
+tree .
+cp ex1/config.yaml ex3/
+cp ex1/ex1b.py ex3/
+cd ex3/
+ls
+ls -ltr
+mv ex1b.py ex3a.py 
+vim ex3a.py 
+python ex3a.py 
+vim ex3a.py 
+cd ..
+git status
+git add ex2/*
+git add ex3/*
+git status
+git commit -m "finish ex2 and started ex3" -a
+git status
+vim ex3a.py
+ls
+cd ex3/
+ls
+vim ex3a.py 
+python ex3a.py 
+ls -ltr
+cp ex3a.py ex3b.py 
+cd ..
+git status
+git add week04/*
+git status
+git commit -m "adding week04 ex3a" -a
+cd week04/
+ls
+cd ex3/
+s
+ls
+cat config.yaml 
+cd
+cat nornir_inventory/hosts.yaml 
+cat nornir_inventory/defaults.yaml 
+ssh arista1.lasthop.io -l pyclass
+ssh nxos1.lasthop.io -l pyclass
