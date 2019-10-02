@@ -1,0 +1,1 @@
+2019-10-01 17:09:10,872 -  nornir.core -     INFO -        run() - Running task 'add_vlan' with args {'vlan_id': 100, 'vlan_name': 'tmorales-ex3a'} on 6 hosts
