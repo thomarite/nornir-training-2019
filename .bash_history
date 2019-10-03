@@ -1,95 +1,3 @@
-vim ex4.py 
-python ex4.py 
-vim ex4.py 
-python ex4.py 
-ls
-vim hosts.yaml 
-vim ex4.py 
-python ex4.py 
-vim ex4.py 
-ls -ltr
-cat nornir.log 
-cd ..
-ls -ltr
-cp -r ex4 ex5
-cd ex5/
-ls
-ls -ltr
-rm nornir.log 
-vim defaults.yaml 
-:Q
-vim defaults.yaml 
-vim hosts.yaml 
-mv ex4.py ex5.py
-vim ex5.py 
-python ex5.py 
-vim ex5.py 
-vim hosts.yaml 
-vim defaults.yaml 
-cat hosts.yaml 
-vim defaults.yaml 
-vim ex5.py 
-python ex5.py 
-vim ex5.py 
-python ex5.py 
-ls -ltr
-cd ..
-ls -ltr
-cd ..
-ls
-ls -lt
-pwd
-ls -ltra
-git init
-cat .git/config 
-cd .git/
-ls
-ls -ltr
-cat description 
-cd info/
-ls
-cat exclude 
-cd ..
-ls
- -ltr
-ls -ltr
-cat config 
-tree 
-cd
-git status
-git commit -m "initial commit adding the whole home dir" -a
-git config --global user.email tomas.morales@gmail.com
-git config --global user.name tmorales
-git status
-git commit -m "initial commit adding the whole home dir" -a
-git add *
-git status
-git add ./*
-git status
-git add ./.*
-git add .*
-
-git add *
-git status
-git add .ansible
-ls -ltra
-cd .ansible
-ls
-cd tmp/
-cd ..
-ls
-cd
-git status
-du -h
-git status
-git add .ansible.cfg 
-git add .bash*
-git add .gitconfig 
-git add .netmiko.yml 
-git add .vim*
-git status
-git ad .emacs 
-git add .emacs 
 vim .gitignore
 git status
 git add .gitignore 
@@ -998,3 +906,95 @@ ssh arista1.lasthop.io -l pyclass
 ssh nxos1.lasthop.io -l pyclass
 ssh arista1.lasthop.io -l pyclass
 ssh nxos1.lasthop.io -l pyclass
+ssh arista4.lasthop.io -l pyclass
+cd week04/ex3/
+ls
+ls -ltr
+vim ex3b.py 
+python ex3a.py 
+vim ex3b.py 
+python ex3b.py 
+vim ex3b.py 
+python ex3b.py 
+vim ex3b.py 
+python ex3b.py 
+vim ex3b.py 
+python ex3b.py 
+vim ex3b.py 
+python ex3b.py 
+vim ex3b.py 
+python ex3b.py 
+vim ex3b.py 
+python ex3b.py 
+ls -ltr
+vim ex3b.py ex3c.py 
+cp ex3b.py ex3c.py 
+ls -ltr
+vim ex3c.py 
+python ex3c.py 
+ls
+cd ..
+git status
+cd ..
+git add week04/*
+git status
+git commit -m "finished week04 ex3" -a
+ls
+cd week04/
+ls
+mkdir ex4
+cp ex3/config.yaml ex4/
+cp ex3/ex3c.py ex4/
+cd ex4/
+ls
+ls -ltr
+mv ex3c.py ex4a.py 
+ls
+vim ex4a.py 
+python ex4a.py 
+vim ex4a.py 
+python ex4a.py 
+ls
+ls -ltr
+vim ex4a.py 
+cp ex4a.py ex4b.py 
+vim ex4b.py 
+vim ex4a.py 
+vim ex4b.py 
+ls -ltr
+python ex4b.py 
+vim ex4b.py 
+python ex4b.py 
+vim ex4b.py 
+cd ..
+ls
+ls -ltr
+mkdi ex5
+mkdir ex5
+cp ex4/config.yaml ex5/
+cp ex4/ex4a.py ex5/
+cd ex5/
+ls
+mv ex4a.py ex5a.py
+vim ex5a.py 
+python ex5a.py 
+vim ex5a.py 
+python ex5a.py 
+vim ex5a.py 
+cp ex5a.py ex5b.py 
+vim ex5b.py 
+python ex5b.py 
+vim ex5b.py 
+python ex5b.py 
+ls -ltr
+cp ex5b.py ex5c.py
+rm ex5c.py 
+cd ..
+git status
+git add ex4
+git add ex5
+git status
+git commit -m "adding week4 ex4 complete and ex5 but c" -a
+git status
+ls 
+ls -ltr
