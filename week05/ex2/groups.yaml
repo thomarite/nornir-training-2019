@@ -1,0 +1,45 @@
+---
+ios:
+  platform: ios
+  connection_options:
+    netmiko:
+      platform: cisco_ios
+      extras: {}
+    napalm:
+      extras:
+        optional_args: {}
+
+nxos:
+  platform: nxos
+  connection_options:
+    netmiko:
+      platform: cisco_nxos
+      extras: {}
+    napalm:
+      port: 8443
+      extras:
+        optional_args: {}
+
+eos:
+  platform: eos
+  data:
+    snmp_id: 456
+  connection_options:
+    netmiko:
+      platform: arista_eos
+      extras:
+        global_delay_factor: 5
+    napalm:
+      port: 443
+      extras:
+        optional_args: {}
+
+junos:
+  platform: junos
+  connection_options:
+    netmiko:
+      platform: juniper_junos
+      extras: {}
+    napalm:
+      extras:
+        optional_args: {}

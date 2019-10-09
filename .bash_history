@@ -1,49 +1,3 @@
-vim .gitignore
-git status
-git add .gitignore 
-cat .viminfo 
-git rm .viminfo 
-git commit -m "adding a bit more files" -a
-git status
-ls -ltr
-ls -ltra
-vim .gitignore 
-git status
-git checkout .viminfo 
-git rm .viminfo 
-ls -ltra
-vim .gitignore 
-git status
-git commit -m "a minor change" -a
-git status
-ls -ltra
-du -h
-du -h --max-depth-1
-du -h --max-depth=1
-cd netmiko_tools/
-ls
-ls -ltr
-pwd
-ls -ltra
-cd ..
-du -h --max-depth=1
-cd week01/
-ls
-tree 
-ls
-ls -ltr
-cd nornir_inventory/
-ls
-ls -ltr
-cd ..
-ls -ltr
-mkdir week02
-cd week0
-cd week02/
-ls -ltr
-ls -ltr ../week01/
-ls -ltr ../week01/ex1/
-mkdir ex1
 mkdir ex2
 mkdir ex3
 mkdir ex4
@@ -998,3 +952,49 @@ git commit -m "adding week4 ex4 complete and ex5 but c" -a
 git status
 ls 
 ls -ltr
+ls
+cd week04/ex5/
+ls
+ls -ltr
+vim ex5b.py 
+vim ex5a.py 
+cat ../../nornir_inventory/defaults.yaml 
+cat ../../nornir_inventory/hosts.yaml 
+ssh arista4.lasthop.io -l pyclass
+cd
+pwd
+git status
+ls
+ls -ltr
+ls
+cd week04/
+ls
+ls -ltr
+cd ex5/
+ls
+ls -ltr
+vim ex5b.py 
+cp ex5b.py ex5c.py
+vim ex5c.py 
+python ex5c.py 
+cd ..
+git status
+git add ex5/
+git status
+git commit -m "finish week4 exercises" -a
+cd ..
+ls
+ls -ltr
+mkdir week05
+cd week05/
+mkdir ex1
+cd ..
+git status
+ls
+ls -ltr
+cd week05/
+ls
+cd
+git status
+vim week05/ex1/test.txt
+git status

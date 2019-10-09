@@ -1,0 +1,255 @@
+2019-10-09 15:54:36,833 -  nornir.core -     INFO -        run() - Running task 'add_snmp_id' with args {} on 6 hosts
+2019-10-09 16:11:05,638 -  nornir.core -     INFO -        run() - Running task 'get_eos_config' with args {} on 4 hosts
+2019-10-09 16:11:05,990 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/pyeapi/eapilib.py", line 385, in send
+    self.transport.endheaders(message_body=data)
+  File "/usr/lib64/python3.6/http/client.py", line 1249, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib64/python3.6/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/lib64/python3.6/http/client.py", line 974, in send
+    self.connect()
+  File "/usr/lib64/python3.6/http/client.py", line 1415, in connect
+    server_hostname=server_hostname)
+  File "/usr/lib64/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib64/python3.6/ssl.py", line 817, in __init__
+    self.do_handshake()
+  File "/usr/lib64/python3.6/ssl.py", line 1077, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib64/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: UNKNOWN_PROTOCOL] unknown protocol (_ssl.c:852)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/src/napalm/napalm/eos/eos.py", line 142, in open
+    self.device.run_commands(["show clock"], encoding="text")
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/pyeapi/client.py", line 730, in run_commands
+    response = self._connection.execute(commands, encoding, **kwargs)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/pyeapi/eapilib.py", line 499, in execute
+    response = self.send(request)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/pyeapi/eapilib.py", line 428, in send
+    raise ConnectionError(str(self), error_msg)
+pyeapi.eapilib.ConnectionError: Socket error during eAPI connection: [SSL: UNKNOWN_PROTOCOL] unknown protocol (_ssl.c:852)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 51, in open
+    connection.open()
+  File "/home/tmorales/VENV/py3_venv/src/napalm/napalm/eos/eos.py", line 147, in open
+    raise ConnectionException(py23_compat.text_type(ce))
+napalm.base.exceptions.ConnectionException: Socket error during eAPI connection: [SSL: UNKNOWN_PROTOCOL] unknown protocol (_ssl.c:852)
+
+2019-10-09 16:11:05,990 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'get_eos_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2.py", line 7, in get_eos_config
+    result = task.run(task=napalm_get, getters=["config"], retrieve="running")
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2019-10-09 16:11:06,017 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/pyeapi/eapilib.py", line 385, in send
+    self.transport.endheaders(message_body=data)
+  File "/usr/lib64/python3.6/http/client.py", line 1249, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib64/python3.6/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/lib64/python3.6/http/client.py", line 974, in send
+    self.connect()
+  File "/usr/lib64/python3.6/http/client.py", line 1415, in connect
+    server_hostname=server_hostname)
+  File "/usr/lib64/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib64/python3.6/ssl.py", line 817, in __init__
+    self.do_handshake()
+  File "/usr/lib64/python3.6/ssl.py", line 1077, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib64/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: UNKNOWN_PROTOCOL] unknown protocol (_ssl.c:852)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/src/napalm/napalm/eos/eos.py", line 142, in open
+    self.device.run_commands(["show clock"], encoding="text")
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/pyeapi/client.py", line 730, in run_commands
+    response = self._connection.execute(commands, encoding, **kwargs)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/pyeapi/eapilib.py", line 499, in execute
+    response = self.send(request)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/pyeapi/eapilib.py", line 428, in send
+    raise ConnectionError(str(self), error_msg)
+pyeapi.eapilib.ConnectionError: Socket error during eAPI connection: [SSL: UNKNOWN_PROTOCOL] unknown protocol (_ssl.c:852)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 51, in open
+    connection.open()
+  File "/home/tmorales/VENV/py3_venv/src/napalm/napalm/eos/eos.py", line 147, in open
+    raise ConnectionException(py23_compat.text_type(ce))
+napalm.base.exceptions.ConnectionException: Socket error during eAPI connection: [SSL: UNKNOWN_PROTOCOL] unknown protocol (_ssl.c:852)
+
+2019-10-09 16:11:06,017 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'get_eos_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2.py", line 7, in get_eos_config
+    result = task.run(task=napalm_get, getters=["config"], retrieve="running")
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2019-10-09 16:11:06,027 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/pyeapi/eapilib.py", line 385, in send
+    self.transport.endheaders(message_body=data)
+  File "/usr/lib64/python3.6/http/client.py", line 1249, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib64/python3.6/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/lib64/python3.6/http/client.py", line 974, in send
+    self.connect()
+  File "/usr/lib64/python3.6/http/client.py", line 1415, in connect
+    server_hostname=server_hostname)
+  File "/usr/lib64/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib64/python3.6/ssl.py", line 817, in __init__
+    self.do_handshake()
+  File "/usr/lib64/python3.6/ssl.py", line 1077, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib64/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: UNKNOWN_PROTOCOL] unknown protocol (_ssl.c:852)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/src/napalm/napalm/eos/eos.py", line 142, in open
+    self.device.run_commands(["show clock"], encoding="text")
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/pyeapi/client.py", line 730, in run_commands
+    response = self._connection.execute(commands, encoding, **kwargs)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/pyeapi/eapilib.py", line 499, in execute
+    response = self.send(request)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/pyeapi/eapilib.py", line 428, in send
+    raise ConnectionError(str(self), error_msg)
+pyeapi.eapilib.ConnectionError: Socket error during eAPI connection: [SSL: UNKNOWN_PROTOCOL] unknown protocol (_ssl.c:852)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 51, in open
+    connection.open()
+  File "/home/tmorales/VENV/py3_venv/src/napalm/napalm/eos/eos.py", line 147, in open
+    raise ConnectionException(py23_compat.text_type(ce))
+napalm.base.exceptions.ConnectionException: Socket error during eAPI connection: [SSL: UNKNOWN_PROTOCOL] unknown protocol (_ssl.c:852)
+
+2019-10-09 16:11:06,027 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'get_eos_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2.py", line 7, in get_eos_config
+    result = task.run(task=napalm_get, getters=["config"], retrieve="running")
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2019-10-09 16:11:06,044 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/pyeapi/eapilib.py", line 385, in send
+    self.transport.endheaders(message_body=data)
+  File "/usr/lib64/python3.6/http/client.py", line 1249, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib64/python3.6/http/client.py", line 1036, in _send_output
+    self.send(msg)
+  File "/usr/lib64/python3.6/http/client.py", line 974, in send
+    self.connect()
+  File "/usr/lib64/python3.6/http/client.py", line 1415, in connect
+    server_hostname=server_hostname)
+  File "/usr/lib64/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/usr/lib64/python3.6/ssl.py", line 817, in __init__
+    self.do_handshake()
+  File "/usr/lib64/python3.6/ssl.py", line 1077, in do_handshake
+    self._sslobj.do_handshake()
+  File "/usr/lib64/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: UNKNOWN_PROTOCOL] unknown protocol (_ssl.c:852)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/src/napalm/napalm/eos/eos.py", line 142, in open
+    self.device.run_commands(["show clock"], encoding="text")
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/pyeapi/client.py", line 730, in run_commands
+    response = self._connection.execute(commands, encoding, **kwargs)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/pyeapi/eapilib.py", line 499, in execute
+    response = self.send(request)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/pyeapi/eapilib.py", line 428, in send
+    raise ConnectionError(str(self), error_msg)
+pyeapi.eapilib.ConnectionError: Socket error during eAPI connection: [SSL: UNKNOWN_PROTOCOL] unknown protocol (_ssl.c:852)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 51, in open
+    connection.open()
+  File "/home/tmorales/VENV/py3_venv/src/napalm/napalm/eos/eos.py", line 147, in open
+    raise ConnectionException(py23_compat.text_type(ce))
+napalm.base.exceptions.ConnectionException: Socket error during eAPI connection: [SSL: UNKNOWN_PROTOCOL] unknown protocol (_ssl.c:852)
+
+2019-10-09 16:11:06,044 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'get_eos_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex2.py", line 7, in get_eos_config
+    result = task.run(task=napalm_get, getters=["config"], retrieve="running")
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2019-10-09 16:12:50,433 -  nornir.core -     INFO -        run() - Running task 'get_eos_config' with args {} on 4 hosts
