@@ -1,0 +1,17 @@
+---
+my_acl:
+  - protocol: tcp
+    destination_port: 22
+    destination_address: 11.22.33.44/32
+    term_name: rule11
+    state: accept
+  - protocol: tcp
+    destination_port: 443
+    destination_address: 11.22.33.44/32
+    term_name: rule22
+    state: accept
+  - protocol: tcp
+    destination_port: 443
+    destination_address: 11.22.33.44/32
+    term_name: rule33
+    state: discard
