@@ -15,3 +15,10 @@ my_acl:
     destination_address: 11.22.33.44/32
     term_name: rule33
     state: discard
+
+TEST:
+  - protocol: udp
+    destination_port: 443
+    destination_address: 8.8.8.8/32
+    term_name: RULEX
+    state: accept

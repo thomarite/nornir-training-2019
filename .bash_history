@@ -1,106 +1,3 @@
-mkdir ex2
-mkdir ex3
-mkdir ex4
-cd ex
-cd ex1/
-vim hosts.yaml
-vim ex1-1.py
-python
-ls
-vim ex1-1.py 
-python ex1-1.py 
-vim ex1-1.py 
-python ex1-1.py 
-vim ex1-1.py 
-python ex1-1.py 
-mv ex1-1.py ex1a.py
-cp ex1a.py ex1b.py
-vim ex1b.py
-vim config.yaml
-ls -ltr
-python ex1b.py 
-export NORNIR_CORE_NUM_WORKERS=10
-python ex1b.py 
-cp ex1b.py ex1d.py
-vim ex1d.py 
-python ex1d.py 
-cd ..
-ls -ltr
-cd ex2/
-ls
-ls -ltr
-vim config.yml
-vim config.yaml
-cp ../ex1/ex1a.py .
-ls
-mv ex1a.py ex2a.py 
-vim ex2a.py 
-python ex2a.py 
-pwd
-cd
-ls -ltr
-cd nornir_inventory/
-ls
-pwd
-cd
-cd week02/ex2/
-ls
-vim config.yaml 
-ls -ltr ~/nornir_inventory/hosts.yaml
-pwd
-cat ~/nornir_inventory/hosts.yaml
-cat config.yaml 
-pwd
-python ex2a.py 
-vim ex2a.py
-python ex2a.py 
-vim ex2a.py
-touch ex2b.py
-ls -ltr
-pw
-pwd
-cd ..
-ls
-ls -ltr
-cd ..
-ls
-ls -ltr
-pwd
-cd
-git staus
-git status
-vim .gitignore 
-git status
-vim .gitignore 
-git add week02/
-git status
-git add .gitignore
-git add nornir_inventory/groups.yaml
-git status
-git commit -m "adding week2 exercices so far"
-git status
-ls -ltr
-cd week02/ex3/
-ls
-ls -ltr
-cd
-cd nornir_inventory/
-ls
-ls -ltr
-cat hosts.yaml 
-ssh arista1.lasthop.io
-cat groups.yaml 
-cat defaults.yaml 
-ssh arista1.lasthop.io -l pyclass
-ssh cisco3.lasthop.io -l pyclass
-ls
-ls -ltr
-cd week02/
-ls
-ls - ltr
-ls -ltr
-cd ex2/
-ls
 ls -ltr
 vim ex2b.py 
 cp ex2a.py ex2b.py
@@ -997,4 +894,107 @@ ls
 cd
 git status
 vim week05/ex1/test.txt
+git status
+cd week05/ex1/
+ls
+vim hosts.yaml 
+pwd
+ls
+vim ../../week04/ex4/ex4a.py 
+vim hosts.yaml 
+:q
+ls -ltr
+cd week05/
+ls
+ls -ltr
+cd ex1/
+ls
+ls -ltr
+cat test.txt 
+rm test.txt 
+cp ../../week04/ex1/config.yaml .
+vim config.yaml 
+cp ../../nornir_inventory/(hosts.yaml,groups.yaml) .
+cp ../../nornir_inventory/[hosts.yaml,groups.yaml] .
+cp ../../nornir_inventory/(hosts.yaml,groups.yaml) .
+cp ../../nornir_inventory/* .
+ls
+rm defaults.yaml 
+vim config.yaml 
+vim hosts.yaml 
+vim groups.yaml 
+vim hosts.yaml 
+vim ex1.py
+python ex1.py 
+vim ex1.py
+python ex1.py 
+vim ex1.py
+vim config.yaml 
+python ex1.py 
+vim config.yaml 
+vi 
+vim ex1.py 
+python ex1.py 
+vim ex1.py 
+python ex1.py 
+vim config.yaml 
+vim ./hosts.yaml 
+python ex1.py 
+vim ./hosts.yaml 
+vim config.yaml 
+python ex1.py 
+vim config.yaml 
+vim groups.yaml 
+python ex1.py 
+vim groups.yaml 
+vim ex1.py 
+python ex1.py 
+vim ex1.py 
+python ex1.py 
+vim ex1.py 
+ls -ltr
+vim config.yaml 
+vim hosts.yaml 
+vim groups.yaml 
+vim ex1.py 
+python ex1.py 
+vim ex1.py 
+cd ..
+ls -ltr
+mkdir ex2
+rm -rf ex2/
+cp -r ex1 ex2
+ls
+cd ex2/
+cp ../../nornir_inventory/defaults.yaml .
+vim defaults.yaml 
+vim config.yaml 
+ls
+mv ex1.py ex2.py
+vim ex2.py 
+python ex2.py 
+vim ex2.py 
+python ex2.py 
+vim groups.yaml 
+python ex2.py 
+:
+cd ..
+git status
+cd ..
+git status
+git add week05/
+git status
+git commit -m "adding exercises for week5" -a
+git status
+cd week05/ex2/
+ls
+cd ..
+mkdir ex3
+vim acls.yaml
+cd ..
+pwd
+git status
+git add week05/*
+git commit -m "adding ex3 for week5" -a
+rebase
 git status
