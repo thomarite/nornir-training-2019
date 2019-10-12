@@ -18,7 +18,6 @@ def junos_acl(task):
   # Load the YAML-ACL entries
   in_yaml = task.run(task=data.load_yaml, file=f"acl.yaml")
   in_yaml = in_yaml[0].result
-  task.host['acl'] = in_yaml
   #print(task.host['acl'])
 
   result = task.run(task=text.template_string, template=TEMPLATE_ACL, acl=in_yaml)
