@@ -1,0 +1,4 @@
+interface Ethernet1/1
+ no switchport
+ ip address 172.20.1.1/30
+ no shutdown  

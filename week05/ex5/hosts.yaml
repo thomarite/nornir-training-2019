@@ -14,18 +14,13 @@ nxos1:
     groups:
       - nxos
     data:
-      interfaces:
-        - int_name: Ethernet1/1
-          ip_address: 172.20.1.1
-          ip_mask: 30
-        - int_name: Ethernet1/2
-          ip_address: 172.20.2.1
-          ip_mask: 30
-      bgp:
-        bgp_asn: 22
-        bgp_router_id: 1.1.1.1
-        bgp_peer: 172.20.1.2
-        bgp_remote_asn: 22
+      int_name: Ethernet1/1
+      ip_address: 172.20.1.1
+      ip_mask: 30
+      bgp_asn: 22
+      bgp_router_id: 1.1.1.1
+      bgp_peer: 172.20.1.2
+      bgp_remote_asn: 22
 
 
 nxos2:
@@ -33,18 +28,13 @@ nxos2:
     groups:
       - nxos
     data:
-      interfaces:
-        - int_name: Ethernet1/1
-          ip_address: 172.20.1.2
-          ip_mask: 30
-        - int_name: Ethernet1/2
-          ip_address: 172.20.2.2
-          ip_mask: 30
-      bgp:
-        bgp_asn: 22
-        bgp_router_id: 1.1.1.2
-        bgp_peer: 172.20.1.1
-        bgp_remote_asn: 22
+      int_name: Ethernet1/1
+      ip_address: 172.20.1.2
+      ip_mask: 30
+      bgp_asn: 22
+      bgp_router_id: 1.1.1.2
+      bgp_peer: 172.20.1.1
+      bgp_remote_asn: 22
 
 arista1:
     hostname: arista1.lasthop.io
