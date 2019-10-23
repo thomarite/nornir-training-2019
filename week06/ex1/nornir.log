@@ -1,0 +1,29 @@
+2019-10-23 16:05:54,294 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'cmd': 'show ip interface brief'} on 1 hosts
+2019-10-23 16:05:54,299 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2019-10-23 16:05:54,299 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex1.py", line 6, in send_command
+    results = task.run(task=netmiko_send_command, config_command=cmd)
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2019-10-23 16:07:00,784 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'cmd': 'show ip interface brief'} on 1 hosts
+2019-10-23 16:10:58,994 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'cmd': 'show ip interface brief'} on 1 hosts
+2019-10-23 16:11:04,511 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex1b.py", line 7, in send_command
+    if "syntax error" in resuts[0].result:
+NameError: name 'resuts' is not defined
+
+2019-10-23 16:11:26,351 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'cmd': 'show ip interface brief'} on 1 hosts

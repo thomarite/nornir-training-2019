@@ -1,309 +1,3 @@
-ls -ltr
-vim ex2b.py 
-cp ex2a.py ex2b.py
-vim ex2b.py 
-python ex2b.py 
-vim ex2b.py 
-python ex2b.py 
-vim ex2b.py 
-python ex2b.py 
-vim ex2b.py 
-cp ex2b.py ex2c.py
-vim ex2c.py
-python ex2c.py 
-vim ex2c.py
-python ex2c.py 
-vim ex2c.py
-cat ex2c.py 
-python ex2c.py 
-vim ex2c.py
-python ex2c.py 
-vim ex2c.py
-python ex2c.py 
-vim ex2c.py
-cp ex2c.py ex2d.py
-vim ex2d.py
-python ex2d.py 
-vim ex2d.py
-cp ex2d.py ex2e.py
-vim ex2e.py 
-python ex2e.py 
-ls
-ls -ltr
-cd ..
-ls
-cd ex3/
-cp ../ex2/ex2d.py .
-mv ex2d.py ex3a.py 
-vim ex3a.py 
-python ex3a.py 
-cd ..
-cd ex2/
-ls
-ls -ltr
-cp config.yaml ../ex3/
-cd ../ex3/
-ls
-ls -ltr
-cat config.yaml 
-python ex3a.py 
-vim ex3a.py 
-python ex3a.py 
-vim ex3a.py 
-python ex3a.py 
-vim ex3a.py 
-python ex3a.py 
-vim ex3a.py 
-python ex3a.py 
-vim ex3a.py 
-python ex3a.py 
-vim ex3a.py 
-python ex3a.py 
-vim ex3a.py 
-cd ..
-cd ex4/
-ls
-ls -ltr
-ls -ltr ../ex3/
-cp ../ex3/* .
-ls
-ls -ltr
-mv ex3a.py ex4a.py
-vim ex4a.py 
-python ex4a.py 
-ls
-ls -ltr
-git status
-ls -lrt .ssh/
-cd week02/
-ls
-ls -ltr
-cd ex3/
-ls
-ls -ltr
-cat ex3a.py 
-cd ..
-cd ex4/
-ls
-ls -ltr
-vim ex4a.py 
-python ex4a.py 
-python
-vim ex4a.py 
-python ex4a.py 
-ls -ltr
-cd ..
-ls -ltr
-mkdir ex5
-cd ex5/
-cp ../ex4/config.yaml .
-cp ../ex4/ex4a.py .
-ls -ltr
-mv ex4a.py ex5a.py 
-cp ../ex3/ex3a.py ex5a.py 
-ls
-ls -ltr
-vim ex5a.py 
-python ex5a.py 
-vim ex5a.py 
-vim ../ex3/ex3a.py 
-python ex5a.py 
-vim ../ex4/ex4a.py 
-vim ex5a.py 
-cp ex5a.py ex5b.py 
-vim ex5b.py 
-python ex5b.py 
-vim ex5b.py 
-cd ..
-git status
-git add week02
-git status
-cat .ssh/known_hosts 
-vim .gitignore 
-git status
-git add .gitignore 
-git status
-vim .gitignore 
-git status
-git commit -m "week2 exercises so far" -a
-git status
-
-git status
-cd week02/
-ls
-ls -ltr
-cd ex5/
-ls
-ls -ltr
-vim ex5b.py 
-cp ex5b.py ex5c.py
-vim ex5c.py 
-vim ex5a.py 
-vim ex5c.py 
-python ex5c.py 
-vim ex5c.py 
-python ex5c.py 
-cp ex5c.py  ex5d.py
-vim ex5d.py
-python ex5d.py 
-vim ex5d.py
-python ex5d.py 
-vim ex5d.py
-python ex5d.py 
-vim ex5d.py
-python ex5d.py 
-vim ex5d.py
-python ex5d.py 
-pwd
-cd ..
-ls
-cd ..
-ls -ltr
-mkdi week03
-mkdir week03
-cd week03/
-ls
-ls -ltr ../week02/
-mkdir ex1
-cd ex1/
-ls
-ls -ltr
-pwd
-cd
-git status
-git add week02/*
-git status
-git commit -m "completed week2 exercicesgit status" -a
-rebase
-git status
-ks
-ls
-ls -ltr
-git status
-cd week02/
-ls
-cd ex5/
-ls
-ls -ltr
-vi ex5d.py 
-ls
-ls -ltr
-cd week03/
-ls
-cd ex1/
-ls
-ls -ltr
-vim hosts.yaml
-vim groups.yaml
-vim ex1a.py
-python ex1a.py 
-ls
-python ex1a.py 
-vim ex1a.py
-python ex1a.py 
-s
-ls
-rm config.yaml 
-vim ex1a.py
-python ex1a.py 
-ls
-ls -ltr
-cd ..
-ls
-mv ex1 ex1a
-cp -r ex1a ex1b
-cd ex1b/
-ls
-vim groups.yaml 
-ls -ltr
-mv ex1a.py ex1b.py
-vim ex1b.py 
-python ex1b.py 
-vim ex1b.py 
-python ex1b.py 
-vim groups.yaml 
-vim hosts.yaml 
-cd ..
-ls
-mkdir ex2
-ls
-cd ex2/
-ls
-ls -ltr
-mv ex1b.py ex2a.py
-vim ex2a.py 
-python ex2a.py 
-vim ex2a.py 
-python ex2a.py 
-vim ex2a.py 
-python ex2a.py 
-vim ex2a.py 
-ls -ltr
-vim hosts.yaml 
-vim ex2a.py 
-python ex2
-cp ex2a.py ex2b.py 
-vim ex2b.py 
-python ex2b.py 
-vim ex2b.py 
-ls
-cp ex2b.py ex2c.py
-vim ex2c.py 
-python ex2c.py 
-vim ex2c.py 
-cd ..
-ls -ltr
-mkdir ex3
-cd ex3/
-ls
-ls -ltr
-mv ex2c.py ex3a.py 
-vim ex3a.py 
-python ex3a.py 
-pwd
-ls
-cp ex3a.py ex3b.py 
-vim ex3b.py 
-python ex3b.py 
-vim ex3b.py 
-python ex3b.py 
-cp ex3b.py ex3c.py 
-vim ex3c.py 
-python ex3c.py 
-cp ex3c.py ex3d.py 
-vim ex3d.py 
-python ex3d.py 
-vim ex3c.py 
-vim ex3d.py 
-python ex3c.py 
-python ex3d.py 
-vim ex3a.py 
-vim ex3b.py 
-vim ex3c.py 
-cd ..
-ls
-mkdi ex4
-mkdir ex4
-cd ex4/
-vim config.yaml
-ls -ltr
-vim ex4a.py
-ls
-mv ex5a.py ex4a.py 
-vim ex4a.py
-python ex4a.py 
-git status
-cd ..
-ls
-ls -ltr
-git status
-git add week03
-git commit -m "exercices for week3 so far" -a
-cd week03/ex4/
-ls
-ls -ltr
-cp ex4a.py ex4b.py
-vim ex4b.py 
 python ex4b.py 
 vim ex4b.py 
 python ex4b.py 
@@ -998,3 +692,309 @@ git add week05/*
 git commit -m "adding ex3 for week5" -a
 rebase
 git status
+cd week05/
+ls
+cd ex3/
+ls
+ll
+ls -ltr
+cd ..
+ls
+ll
+mv acls.yaml ex3/
+cd ex3/
+vim ex3.py
+cp ../ex1/config.yaml .
+vim config.yaml 
+cp ../../week04/ex1/config.yaml .
+vim config.yaml 
+vim ../../nornir_inventory/hosts.yaml 
+ls
+mkdir templates
+mkdir templates/junos
+mv acls.yaml templates/junos/
+vim ex3.py 
+cd templates/junos/acls.yaml 
+cd templates/junos/
+ls
+mv acls.yaml acl.yaml 
+cd ../..
+vim ex3.py 
+mkdir configs
+vim ex3.py 
+mkdir configs/junos
+vim ex3.py 
+python ex3.py 
+vim ex3.py 
+python ex3.py 
+vim ex3.py 
+python ex3.py 
+clea
+clear 
+python ex3.py 
+pwd
+ls -ltr
+tree .
+vim ../../nornir_inventory/hosts.yaml 
+vim ../../nornir_inventory/groups.yaml 
+vim ex3.py 
+cd templates/junos/
+ls
+vim acl.j2
+ls -ltr
+mv acl.yaml ../../
+cd ../../
+ls
+ls -ltr
+vim config.yaml 
+python ex3.py 
+vim config.yaml 
+vim ex3.py 
+ll
+vim ex3.py 
+python ex3.py 
+vim ex3.py 
+python ex3.py 
+vim ex3.py 
+vim templates/junos/acl.j2 
+python ex3.py 
+vim templates/junos/acl.j2 
+python ex3.py 
+clear
+python ex3.py 
+vim templates/junos/acl.j2 
+clear
+vim templates/junos/acl.j2 
+python ex3.py 
+vim templates/junos/acl.j2 
+clear
+python ex3.py 
+vim templates/junos/acl.j2 
+python ex3.py 
+vim acl.yaml 
+python ex3.py 
+:Q
+ll
+rm -rf configs
+ls
+cd templates/junos/acl.j2 
+vim templates/junos/acl.j2 
+ls
+ll
+cd ..
+mkdir ex4
+ls
+ll
+vim ex3/ex3.py 
+rm -rf ex4
+cp -r ex3 ex4
+ls
+cd ex4/
+ls
+ls -ltr
+mv ex3.py ex4a.py 
+vim ex4a.py 
+vim templates/junos/acl.j2 
+vim ex4a.py 
+python ex4a.py 
+vim ex4a.py
+python ex4a.py 
+vim ex4a.py
+python ex4a.py 
+vim ex4a.py
+python ex4a.py 
+cd ..
+cd ex4/
+ls
+ls -ltr
+vim ex4a.py 
+python ex4a.py 
+cd ..
+git status
+git add week05/*
+git commit -m "ex3 and ex4" -a
+ll
+cd week05/
+ls -ltr
+cd ex4/
+ls
+ls -ltr
+vim ex4a.py 
+vim templates/junos/acl.j2 
+cp ../ex3/ex3.py .
+ls -ltr
+mv ex3.py ex4b.py 
+vim ex4b.py 
+vim ex4a.py 
+python ex4a.py 
+vim ex4a.py 
+vim ex4b.py 
+python ex4b.py 
+ls -ltr
+cp ex4b.py ex4c.py
+vim ex4c.py 
+python ex4c.py 
+pwd
+vim ex4a.py 
+vim ex4b.py 
+vim ex4c.py 
+cp ex4b.py ex4c.py 
+vim ex4c.py 
+python ex4c.py 
+vim ex4c.py 
+cd ..
+mkdir ex5
+cd ex5/
+ls
+cp ../ex4/config.yaml .
+vim config.yaml 
+mkdir router bgp {{ bgp_asn }}
+  router-id {{ bgp_router_id }}
+  neighbor {{ bgp_peer }}
+    remote-as {{ bgp_remote_asn }}
+    address-family ipv4 unicast
+mkdir  nxos
+cd nxos/
+vim bgp.j2
+vim interface.j2
+vim bgp.j2 
+cd ..
+cp ../../nornir_inventory/hosts.yaml .
+ls
+vim hosts.yaml 
+ll
+vim config.yaml 
+vim hosts.yaml 
+mkdir rendered
+ls
+ls -ltr
+rm }}/
+rm \}\}
+rm -rf \}\}
+ls -ltr
+rm -rf \{\{
+ls -ltr
+rm -rf router
+rm -rf bgp_asn/
+rm -rf bgp/
+ls
+ls -ltr
+cd nxos/
+ls
+vim bgp.j2 
+vim conf
+ls
+ls -ltr
+cd ..
+ls
+ll
+cp ../ex4/ex4c.py .
+mv ex4c.py ex5a.py 
+mv ex5a.py ex5b.py 
+vim  ex5b.py 
+vim ex5b.py 
+cd ..
+git status
+git add week05
+git commit -m "week5: finishing ex4 and starting ex5"
+git status
+ls
+ls -ltr
+cd week05/
+ls
+ls -ltr
+cd ex5/
+ls
+ls -ltr
+ls
+tree .
+vim ex5b.py 
+python ex5b.py 
+vim ex5b.py 
+python ex5b.py 
+vim ex5b.py 
+python ex5b.py 
+vim ex5b.py 
+python ex5b.py 
+vim ex5b.py 
+python ex5b.py 
+vim ex5b.py 
+vim config.yaml 
+python ex5b.py 
+vim config.yaml 
+vim hosts.yaml 
+python ex5b.py 
+vim hosts.yaml 
+vim ex5b.py 
+python ex5b.py 
+vim ex5b.py 
+vim hosts.yaml 
+python ex5b.py 
+vim nxos/interface.j2 
+vim hosts.yaml 
+python ex5b.py 
+vim hosts.yaml 
+vim ex5b.py 
+python ex5b.py 
+tree .
+vim ex5b.py 
+vim nxos/interface.j2 
+python ex5b.py 
+ls -ltr
+cd rendered/
+ls
+cd ..
+vim ex5b.py 
+rm nxos1*
+rm nxos2*
+python ex5b.py 
+tree .
+ll
+cp ex5b.py ex5c.py 
+vim ex5c.py 
+python ex5c.py 
+vim ex5c.py 
+python ex5c.py 
+;1R
+quit
+df -hT
+tp
+top
+cd week05/ex5/
+ls -ltr
+vim ex5c.py 
+python ex5c.py 
+;1R
+cd week05/ex5/
+ls
+ls -ltr
+vim config.yaml 
+tree .
+vim nxos/interface.j2 
+cat nxos/interface.j2 
+vim hosts.yaml 
+cat nxos/bgp.j2 
+vim hosts.yaml 
+ssh -l pyclass nxos1.lasthop.io
+vim ../../nornir_inventory/defaults.yaml 
+ssh -l pyclass nxos1.lasthop.io
+vim ex5c.py 
+ssh -l pyclass nxos1.lasthop.io
+cd week05/ex5/
+ls
+ll
+vim ex5c.py 
+python ex5x
+
+vim ex5c.py 
+python ex5x
+python ex5c.py 
+vim ex5c.py 
+python ex5c.py 
+cd ..
+ls
+cd ..
+git status
+git add week05
+git status
+git commit -m "finished week5\!"
