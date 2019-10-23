@@ -27,3 +27,13 @@ Traceback (most recent call last):
 NameError: name 'resuts' is not defined
 
 2019-10-23 16:11:26,351 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'cmd': 'show ip interface brief'} on 1 hosts
+2019-10-23 16:12:56,775 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'cmd': 'show ip interface brief'} on 1 hosts
+2019-10-23 16:13:55,858 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'cmd': 'show ip interface brief'} on 1 hosts
+2019-10-23 16:14:01,314 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex1b.py", line 9, in send_command
+    raise ValueError("Invalid Junos command")
+ValueError: Invalid Junos command
+
