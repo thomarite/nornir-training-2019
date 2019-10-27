@@ -1,0 +1,20 @@
+2019-10-27 15:44:03,961 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | i hostname'} on 2 hosts
+2019-10-27 15:46:34,020 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | i hostname'} on 2 hosts
+2019-10-27 16:16:58,427 -  nornir.core -     INFO -        run() - Running task 'my_task' with args {} on 2 hosts
+2019-10-27 16:16:58,427 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'my_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex4b.py", line 14, in my_task
+    group_object = task.host_groups.refs[0] # <--- "refs" is something special!!!!!!!!!!!!!!!
+AttributeError: 'Task' object has no attribute 'host_groups'
+
+2019-10-27 16:16:58,428 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'my_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/tmorales/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "ex4b.py", line 14, in my_task
+    group_object = task.host_groups.refs[0] # <--- "refs" is something special!!!!!!!!!!!!!!!
+AttributeError: 'Task' object has no attribute 'host_groups'
+
+2019-10-27 16:24:59,569 -  nornir.core -     INFO -        run() - Running task 'my_task' with args {} on 2 hosts

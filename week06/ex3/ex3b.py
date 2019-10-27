@@ -5,6 +5,10 @@ from nornir.plugins.tasks import text
 from nornir.core.filter import F
 from getpass import getpass
 
+import logging
+
+logger = logging.getLogger("nornir")
+
 PASSWORD = getpass()
 #PASSWORD = "88newclass"
 
@@ -16,7 +20,9 @@ def main():
   #import ipdb; ipdb.set_trace()
   agg_result = nr.run(task=networking.netmiko_send_command, command_string="show run | i hostname")
   print_result(agg_result)
-
+  logger.critical("CRITICAL")
+  logger.error("ERROR")
+  logger.debug("DEBUG")
 
 
 if __name__ == "__main__":

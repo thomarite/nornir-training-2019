@@ -1,13 +1,10 @@
 ---
-logging:
-  enabled: True
-  level: DEBUG
-  file: logging-nornir.log
-  #to_console: True
+core:
+  num_workers: 1
 
 inventory:
   plugin: nornir.plugins.inventory.simple.SimpleInventory
   options:
     host_file: "~/nornir_inventory/hosts.yaml"
-    group_file: "~/nornir_inventory/groups.yaml"
+    group_file: "./groups.yaml"
     defaults_file: "./defaults.yaml"
