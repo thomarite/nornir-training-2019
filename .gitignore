@@ -3,3 +3,4 @@
 .viminfo
 .bash_history
 .ssh/
+VENV/
